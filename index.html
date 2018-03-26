@@ -1,47 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Platzi Video</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/fontello.min.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <sidebar class="Sidebar">
-            <div class="LogoContainer">
-                <img class="Logo__img" src="img/logo.png" alt="">
+            <div class="LogoContainer ">
+                <img class="Logo__img" src="img/logo.png" alt="Logo Platzi Video">
             </div>
-            <div class="Playlists">
-                <h3>Mi Playlist</h3>
-                <ol>
-                    <li><a href="#">Item1</a></li>
-                    <li><a href="#">Item2</a></li>
-                    <li><a href="#">Item3</a></li>
-                    <li><a href="#">Item4</a></li>
-                    <li><a href="#">Item5</a></li>
-                    <li><a href="#">Item6</a></li>
-                    <li><a href="#">Item6</a></li>
-                    <li><a href="#">Item6</a></li>
-                    <li><a href="#">Item6</a></li>
-                    <li><a href="#">Item6</a></li>
+            <div class="Playlist">
+                <h3 class="Playlist__title">Mi Playlist</h3>
+                <ol class="Playlist__list">
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente.</a></li>
+                    <li class="Playlist__item"><a class="Playlist__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
                 </ol>
             </div>
             <div class="Friends">
-                <h3>Playlist de Amigos</h3>
-                <ul>
-                    <li><a href="#"><img src="" alt=""><span> Nombre</span></a></li>
-                    <li><a href="#"><img src="" alt=""><span> Nombre</span></a></li>
-                    <li><a href="#"><img src="" alt=""><span> Nombre</span></a></li>
-                    <li><a href="#"><img src="" alt=""><span> Nombre</span></a></li>
+                <h3 class="Friends__title">Playlists de Amigos</h3>
+                <ul class="Friends__list">
+                    <li class="Friends__item"><a href="#" class="Friends__link"><img src="https://cdn-images-1.medium.com/fit/c/36/36/1*K5X_cFiX1cEzuQZtg-bE4Q.jpeg" class="Friends__img" alt="Friends"><span class="Frends__name">Tommie Swaniawski</span></a></li>
+                    <li class="Friends__item"><a href="#" class="Friends__link"><img src="https://cdn-images-1.medium.com/fit/c/36/36/1*K5X_cFiX1cEzuQZtg-bE4Q.jpeg" class="Friends__img" alt="Friends"><span class="Frends__name">Nova Murazik</span></a></li>
+                    <li class="Friends__item"><a href="#" class="Friends__link"><img src="https://cdn-images-1.medium.com/fit/c/36/36/1*K5X_cFiX1cEzuQZtg-bE4Q.jpeg" class="Friends__img" alt="Friends"><span class="Frends__name">Daija Emard</span></a></li>
+                    <li class="Friends__item"><a href="#" class="Friends__link"><img src="https://cdn-images-1.medium.com/fit/c/36/36/1*K5X_cFiX1cEzuQZtg-bE4Q.jpeg" class="Friends__img" alt="Friends"><span class="Frends__name">Gage Grimes</span></a></li>
                 </ul>
             </div>
         </sidebar>
+        <!-- /Sidebar -->
+        <!-- Main -->
         <main class="Main">
-            <form action="" class="Search">
-                <input type="text" placeholder="Buscar">
-            </form>
+            <!-- Main Header -->
+            <div class="Main__header">
+                <form action="" class="Search">
+                    <div class="Search__container">
+                        <input type="text" placeholder="Buscar un artista, canción o amigo..." class="Search__input ">
+                        <i class="Search__icon icon-search"></i>
+                    </div>
+                </form>
+                <div class="Profile">
+                    <div class="Profile__arrow">
+                        <i class="icon-arrow-down"></i>
+                    </div>
+                    <div class="Profile__thumb">
+                        <img src="" alt="">
+                    </div>
+                    <div class="Profile__name">
+                        <p>Arnold Restrepo</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- /Main Header -->
+            <!-- Main Content -->
+            <div class="Main__content">
+                <div class="Destacados">
+                    <small class="Destacados__subtitle">Lo mejor de la semana:</small>
+                    <h3 class="Destacados__title">Destacados:</h3>
+                    <ul class="Media">
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                        <li class="Media__item">
+                            <img class="Media__img" src="img/covers/despacito.jpg" alt="">
+                            <a class="Media__link" href="#">Luis Fonsi - Despacito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /Main Content -->
         </main>
+        <!-- /Main -->
     </div>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+    
+    <!-- <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script> -->
 </body>
 </html>
