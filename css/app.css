@@ -18,6 +18,9 @@ body{
 	font-size: 16px;
 	min-height: 100vh;
 }
+body::-moz-scrollbar {
+      background-color: navy;
+}
 
 img{
 	width: 100%;
@@ -96,11 +99,13 @@ img{
 .Main{
 	padding: 2rem;
 	margin-left: 30%;
+	overflow: hidden;
 }
 
 .Main__header{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 24px;
 }
  
 .Search__container{
@@ -128,9 +133,50 @@ img{
 	color: #777777;
 }
 
-
-}
-
 .Search__icon{
 	color: #515151;
+}
+
+.Profile{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 22%;
+}
+.Profile__arrow,
+.Profile__name,
+.Profile__thumb{
+	cursor: pointer;
+}
+
+.Profile__thumb{
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	border-radius: 30px;
+}
+/* 5. Content  */
+
+.Destacados{padding-bottom: 24px;}
+.Destacados__subtitle{color: #515151;}
+.Destacados__title{color: #3b3b3b;}
+.Media{
+	/* display: flex; */
+	/* flex-wrap: nowrap; */
+	overflow-x: scroll;
+    white-space: nowrap;
+	overflow-y: hidden;
+}
+.Media__item{
+	cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+	margin: 20px;
+}
+
+.Media__img{
+	object-fit: cover;
+	display: block;
 }
