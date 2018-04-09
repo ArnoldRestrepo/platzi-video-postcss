@@ -1,8 +1,6 @@
 /* App CSS */
-
 /* 1. Basic Reset */
 html{box-sizing: border-box;}
-
 *,
 *:after,
 *:before{
@@ -10,7 +8,6 @@ html{box-sizing: border-box;}
 	padding: 0;
 	margin: 0;
 }
-
 body{
 	margin: 0;
 	padding: 0;
@@ -18,16 +15,11 @@ body{
 	font-size: 16px;
 	min-height: 100vh;
 }
-body::-moz-scrollbar {
-      background-color: navy;
-}
-
 img{
 	width: 100%;
 	display: block;
 	height: auto;
 }
-
 /* 2.Container */
 .container{
 	display: flex;
@@ -35,7 +27,6 @@ img{
 	overflow: hidden;
 	position: relative;
 }
-
 /* 3.Sidebar */
 .Sidebar{
 	background-color: #171a2f;
@@ -44,17 +35,11 @@ img{
 	overflow-y: scroll;
 	height: 100vh;
 }
-
 /* 3.1.Logo */
-.Logo__img{
-	width: 80%;
-}
-
+.Logo__img{width: 80%;}
 /* 3.2. Playlist */
 .Playlist{color:  #FFF;}
-.Playlist__title{
-	padding: 1rem 1rem;
-}
+.Playlist__title{padding: 1rem 1rem;}
 .Playlist__list{padding: 0 2.5rem;}
 .Playlist__link{
 	color:  #FFFFFF;
@@ -63,11 +48,8 @@ img{
 	text-decoration: none;
 	font-weight: 300;
 }
-
 /* 3.3. Friends */
-.Friends{
-	color: #FFFFFF;
-}
+.Friends{color: #FFFFFF;}
 .Friends__list{
 	padding: 0 2rem;
 	list-style: none;
@@ -87,27 +69,25 @@ img{
 	align-items: center;
 	align-content: center;
 }
-
 .Friends__img{
 	width: 50px;
 	margin-right: 20px;
 	display: inline-block;
 	border-radius: 100px;
 }
-
 /* 4. Main */
 .Main{
 	padding: 2rem;
 	margin-left: 30%;
 	overflow: hidden;
+	position: relative;
 }
-
 .Main__header{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 24px;
 }
- 
+
 .Search__container{
 	background: #f5f5f5;
 	width: 400px;
@@ -115,9 +95,7 @@ img{
 	/* border: .5px solid transparent; */
 	/* box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .3); */
 }
-.Search__container.is--focus{
-	box-shadow: 0px 0px 2px 0px rgba(0,0,0,.4);
-}
+.Search__container.is--focus{box-shadow: 0px 0px 2px 0px rgba(0,0,0,.4);}
 .Search__input{
 	border: none;
 	background: #f5f5f5;
@@ -129,14 +107,8 @@ img{
 	font-family: 'Noto Sans', sans-serif;
 	color: #515151; 
 }
-.Search__icon{
-	color: #777777;
-}
-
-.Search__icon{
-	color: #515151;
-}
-
+.Search__icon{color: #777777;}
+.Search__icon{color: #515151;}
 .Profile{
 	display: flex;
 	justify-content: space-between;
@@ -148,7 +120,6 @@ img{
 .Profile__thumb{
 	cursor: pointer;
 }
-
 .Profile__thumb{
 	width: 30px;
 	height: 30px;
@@ -156,7 +127,6 @@ img{
 	border-radius: 30px;
 }
 /* 5. Content  */
-
 .Destacados{padding-bottom: 24px;}
 .Destacados__subtitle{color: #515151;}
 .Destacados__title{color: #3b3b3b;}
@@ -175,8 +145,56 @@ img{
     vertical-align: top;
 	margin: 20px;
 }
-
 .Media__img{
 	object-fit: cover;
 	display: block;
+	margin-bottom: .5rem;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+.Media__link{
+	color: #515151;
+	text-decoration: none;
+}
+/* 6. Play Song*/
+.Play{
+	background: linear-gradient(to right, #ff1113, #ff6196);
+	position: fixed;
+	left: 30%;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	padding: 1rem 2rem;
+	display: flex;
+}
+.Play__img{
+	background:
+		#000 
+		url(../img/covers/echame-la-culpa.jpg)
+		center center/cover
+		no-repeat;
+	width: 200px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.Play__icon{
+	color: #FFF;
+	font-size: 1.5rem;
+	padding: .5rem;
+	border: 2px solid #FFF;
+	border-radius: 2.5rem;
+}
+.Play__description{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: 1rem;
+}
+.Play__continue,
+.Play__song{
+	color: #FFF;
+	font-weight: 600;
 }
