@@ -1,0 +1,30 @@
+{
+  "name": "platzi-video-postcss",
+  "version": "0.1.0",
+  "description": "Platzi video with PostCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldRestrepo/platzi-video-postcss.git"
+  },
+  "keywords": [
+    "PostCSS",
+    "CSS",
+    "HTML5"
+  ],
+  "author": "@restrepo_arnold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnoldRestrepo/platzi-video-postcss/issues"
+  },
+  "homepage": "https://github.com/ArnoldRestrepo/platzi-video-postcss#readme",
+  "dependencies": {
+    "postcss-cli": "5.0.0"
+  },
+  "devDependencies": {
+    "postcss-cssnext": "3.1.0"
+  }
+}
